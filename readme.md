@@ -27,23 +27,15 @@ phir ek async function banake us client ko connect krdengy connect method k zali
 
 
 
-
-
 Query operator kia hotin hayn mongoDB me?
 
 Query operators special keywords hotay hayn jo ke comparison, logical operations jese greater than less than jese operations krny me help krta hay.
 
 
 
-
-
-
 MongoDB me projection kia hoti hay:
 
 Projection ek tareeka hay query ko specify krny ka ke mujhe is table k documents me se kon kon si fields chahiyen. project method ko use krky ham field ko choose kr skty hayn k hame wo field chahiye ya nhi? jese k users.find().project({userId: 0}) userId nhi chahiye or agar chahiye tw { userId: 1}
-
-
-
 
 
 
@@ -55,8 +47,6 @@ db.users.find({ email: "hammad@example.com" })
 
 
 
-
-
 Indexing k disadvantages:
 
 har index alag se ek data strucuture ke form me store hota hay
@@ -64,16 +54,9 @@ update delete ya insert krty wqt srf particular data ko update krny k sath sath 
 
 
 
-
-
-
 Mongoose kia hay kia advantage mongodb k andar iska?
 
 mongoose ek data object modeling tool hay jo mongodb me data validation. middleware support or relationship between the collections define krny k kaaam ata hay. mongooose ko use krky ham data ko insert hone se phly uska schema define krskty hayn data types define krskty hayn or multiple collections ka apas me relation bata skty hayn. ham jab ek baar schema banalen phir us collection ka model banake ham us model ko use krskty hayn CRUD operations k liay
-
-
-
-
 
 
 
@@ -108,8 +91,6 @@ Logging, notifications, aur auditing ke liye useful hota hai.
 
 
 
-
-
 Views kia hotay hayn sql me?
 
 SQL me View ek virtual table hoti hai jo kisi SQL query ke result par based hoti hai. Yani view ka apna koi data nahi hota, balki wo ek stored SELECT query hoti hai jisko table ki tarah treat kiya ja sakta hai. Jab bhi aap view ko access karte ho, wo query run hoti hai aur data return karti hai.
@@ -125,12 +106,9 @@ to mujhe sirf IT department ke employees ka data milega, jaise ek normal table s
 
 
 
-
-
 HAVING OR WHERE me difference?
 
 WHERE Clause hamesha GROUP BY se pehle use hota hay jabke Having baad me. Where clause aggregate functions jese ke SUM() AVG() COUNT() ko nhi contain krta jabke HAVING krta hay.
-
 
 
 
@@ -147,3 +125,17 @@ LEFT JOIN: agar hamare pass do tables hayn A and B tw mtlb table A ka data ayega
 RIGHT JOIN: agar hamare pass do tables hayn A and B tw mtlb table B ka data ayega or A table ka sirf matching data ayega
 FULL OUTER JOIN: dono tables ka sara ka sara data ajaiyga
 INNER JOIN: dono tables ka common data ajaiyega data ajaiyga
+
+
+
+===============================================
+===============================================
+===============================================
++++++++++++++++++ NODEJS +++++++++++++++++
+===============================================
+===============================================
+===============================================
+
+
+Event Driven architecture kia hota hay nodejs me?
+
