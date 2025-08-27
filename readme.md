@@ -2,7 +2,7 @@
 
 MongoDB ek document based database jay jo ke BSON format me jo ke JSON like format hay save krta hay. BSON ek binary-encoded JSON like data format hay jo ke JSON ko extend krta hay kuch additional data types k sath jese ke Date and BinData and ObjectId. MongoDB data ko internally JSON se BSON me convert krky store krta hay but humans k liay JSON hi read krwata hay.
 
-# 2- ObjectId in MongoDB:
+2- ObjectId in MongoDB:
 
 ObjectId mongodb me ek unique identifier hota hay jo 24 characters hexadecimal string me dikhaya jata hay.
 ye 12 bytes kuch is taraha bante hayn:
@@ -44,7 +44,6 @@ update delete ya insert krty wqt srf particular data ko update krny k sath sath 
 9- Mongoose kia hay kia advantage mongodb k andar iska?
 
 mongoose ek data object modeling tool hay jo mongodb me data validation. middleware support or relationship between the collections define krny k kaaam ata hay. mongooose ko use krky ham data ko insert hone se phly uska schema define krskty hayn data types define krskty hayn or multiple collections ka apas me relation bata skty hayn. ham jab ek baar schema banalen phir us collection ka model banake ham us model ko use krskty hayn CRUD operations k liay
-
 
 # ===============================================
 
@@ -121,11 +120,9 @@ Example: Har raat 12 baje backup lena, ya Monday 9am par weekly email bhejna.
 
 Queue JOBS: Queue jobs ka matlab hai asynchronous background tasks jo ek queue me daali jaati hain aur worker process unhe handle karta hai. ye time-based nahi hoti, balki event-based hoti hain. Jab koi kaam heavy ho (e.g. emails bhejna, PDF generate karna, image processing, SMS sending), to usay directly request ke andar run karna slow kar dega. Is liye hum usay queue me daal dete hain. Worker background me handle karta hai.
 
-
 4- Streams in NODEJS?
 
 Streams ka matlab hai data ko chhote-chhote parts (chunks) me process karna instead of pura data ek sath load karna.
-
 
 5- Clusters in NODEJS?
 
@@ -135,11 +132,9 @@ Node.js single-threaded hota hai aur ek CPU core use karta hai. Cluster module h
 
 Multer ek Node.js middleware hai jo multipart/form-data handle karta hai, aur file uploads ke liye use hota hai. Isme hum storage (disk ya memory), file size limit, aur type validation set kar sakte hain.
 
-
 7- Express me form data ko kis tarah handle krengy?
 
-Middleware k zariye express.urlencoded() 
-
+Middleware k zariye express.urlencoded()
 
 # ===============================================
 
@@ -148,7 +143,6 @@ Middleware k zariye express.urlencoded()
 ===============================================
 ===============================================
 ===============================================
-
 
 1- Stripe kia hay or ye kese kaam krti hay backend py?
 
@@ -159,27 +153,19 @@ b. Backend pe tum Stripe API call kar ke PaymentIntent ya CheckoutSession create
 c. User ki payment Stripe ke servers pe securely process hoti hai.
 d. Stripe tumhe webhook ke zariye status (success/failure) notify karta hai.
 
-
 2- PaymentIntents kia hayn stripe me?
 
 Stripe ne PaymentIntents API introduce kiya hai jo multiple steps handle karta hai, like 3D Secure authentication (OTP). ye ek object hay jo payment process ka lifecycle handle krta hay
-
 
 3- PaymentIntent or CheckoutSessions me kia difference hay?
 
 PaymentIntent → Custom payment flows banane ke liye use hota hai. Ham apna custom frontend bana sakte hayn (React, Next.js etc.) aur backend pe manually PaymentIntent confirm karte hayn.
 
-
 Checkout Session → Stripe ka ready-made UI hai. Ham session create karte hayn aur user ko Stripe ke checkout page pe redirect kar dete hayn.
-
 
 4- Stripe me webhooks kese kaam krty hayn?
 
 Webhooks ka kaam hota hai Stripe se real-time events receive karna (like payment success/failure, refund issued, subscription canceled, etc.).
-
-
-
-
 
 # =====================================================================================================
 
@@ -192,7 +178,6 @@ Webhooks ka kaam hota hai Stripe se real-time events receive karna (like payment
 1- Websocket kia hay?
 
 WebSockets ek protocol hai jo browser aur server ke darmiyan two-way (duplex) communication allow karta hai. HTTP ya HTTPS me client request krta hay or server response bhejta hay phir connection close hojaata hay lekin websocket me continuously connection barkarar rehta hay until ham usy band na kren.
-
 
 2- Socket.io kia hay
 
